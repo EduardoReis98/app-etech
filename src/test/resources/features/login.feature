@@ -15,4 +15,4 @@ Funcionalidade: Login
     Quando inserir os dados de usuário
       | email               | senha     |
       | automacao@etech.dev | Etech@123 |
-    Então deve realizar o login com sucesso
+    Então deve visualizar o email ultilizado "automacao@etech.dev"
