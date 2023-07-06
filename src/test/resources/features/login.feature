@@ -4,8 +4,10 @@
 #date: 03/07/2023
 #version: 1.0
 
-@testeLogin
+@smokeTest @testeLogin
 Funcionalidade: Login
+  Com essa funcionalidade iremos validar
+  O login na aplicação com um usuário já cadastrado.
 
   Contexto:
     Dado acessar a tela de login

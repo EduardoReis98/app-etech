@@ -16,6 +16,7 @@ public class LoginStep {
     LoginFunc loginFunc = new LoginFunc();
     IntroducaoFunc introducaoFunc = new IntroducaoFunc();
 
+    @Dado("estiver logado na aplicação")
     @Quando("inserir os dados de usuário")
     public void inserirDadosUsuario(DataTable dataTable) {
         List<Map<String, String>> usuario = dataTable.asMaps();
@@ -36,6 +37,8 @@ public class LoginStep {
         boolean resultado = loginFunc.validarBotaoLogin();
         Assert.assertTrue(resultado);
     }
+
+
 }
 
 
