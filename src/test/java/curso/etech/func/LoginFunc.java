@@ -11,4 +11,13 @@ public class LoginFunc {
         loginPage.getCampoSenha().sendKeys(senha);
         loginPage.getBotaoEntrar().click();
     }
+
+    public void acessarCadastro(){
+        loginPage.getBotaoCriarConta().click();
+    }
+
+    public boolean validarBotaoLogin(){
+        return loginPage.getBotaoEntrar().isDisplayed();
+
+    }
 }

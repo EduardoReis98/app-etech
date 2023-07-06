@@ -23,6 +23,9 @@ public class LoginPage {
     @AndroidFindBy(id = "btnLogin")
     private WebElement botaoEntrar;
 
+    @AndroidFindBy(id = "txtCriarConta")
+    private WebElement botaoCriarConta;
+
     public WebElement getCampoEmail() {
         return campoEmail;
     }
@@ -33,5 +36,9 @@ public class LoginPage {
 
     public WebElement getBotaoEntrar() {
         return botaoEntrar;
+    }
+
+    public WebElement getBotaoCriarConta() {
+        return botaoCriarConta;
     }
 }

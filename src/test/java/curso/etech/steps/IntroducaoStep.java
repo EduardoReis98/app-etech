@@ -8,7 +8,7 @@ public class IntroducaoStep {
     IntroducaoFunc introducaoFunc = new IntroducaoFunc();
 
     @Dado("acessar a tela de login")
-    public void acessarTelaLogin(){
+    public void acessarTelaLogin() {
         introducaoFunc.pularIntroducao();
     }
 }
