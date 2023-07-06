@@ -6,6 +6,8 @@
 
   @smokeTest @testCadastro
   Funcionalidade: Cadastro
+    Com essa funcionalidade iremos validar
+    O cadastro de um novo usuário na aplicação
 
     Contexto:
       Dado acessar a tela de cadastro
