@@ -21,7 +21,7 @@ public class BaseTest {
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION,"12");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME,"Emulador E.Tech");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UIAutomator2");
-        capabilities.setCapability(MobileCapabilityType.UDID,"emulator-5554");
+        capabilities.setCapability(MobileCapabilityType.UDID,"RQCT1041S5D");
         capabilities.setCapability("appActivity","br.com.filme.app.modules.onboardingone.ui.OnboardingOneActivity");
         capabilities.setCapability("appPackage","br.com.filme.app");
 
