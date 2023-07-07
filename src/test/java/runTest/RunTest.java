@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
                 features = {"src/test/resources/features/"},
                 glue = {"curso.etech.steps", "curso.etech.configuration"},
                 plugin = {"pretty"}, monochrome = true,
-                tags = "@testeCadastroFilme")
+                tags = "@pesquisaHome")
 
 public class RunTest {
 }
