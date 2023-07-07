@@ -35,4 +35,9 @@ public class HomeStep {
     public void selecionarAbaSeries(){
         homeFunc.selecionarSeries();
     }
+
+    @E("selecionar a aba de filmes")
+    public void selecionarAbaFilmes(){
+        homeFunc.selecionarFilmes();
+    }
 }
