@@ -16,4 +16,13 @@ public class HomeFunc extends BaseTest {
         String emailLogado = homePage.getEmailLogado().getText();
         return emailLogado;
     }
+
+    public void pesquisarHome(String nomeFilme){
+        homePage.getCampoPesquisa().sendKeys(nomeFilme);
+    }
+
+    public boolean visualizarCapaFilme(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(homePage.getXpathCampoPesquisa())));
+        return homePage.getCapaFilme().isDisplayed();
+    }
 }

@@ -29,9 +29,9 @@ public class CadastroPage {
     @AndroidFindBy(id = "txtButton")
     private WebElement botaoProsseguir;
 
-    By campoCepWait = By.xpath("//android.widget.EditText[@resource-id='br.com.filme.app:id/etInputtextes']");
+    private String campoCepWait = "//android.widget.EditText[@resource-id='br.com.filme.app:id/etInputtextes']";
 
-    By textSaoPaulo = By.xpath("//android.widget.EditText[@text='São Paulo']");
+    private String textSaoPaulo = "//android.widget.EditText[@text='São Paulo']";
 
     @AndroidFindBy(id = "etInputtextes")
     private WebElement campoCep;
@@ -86,11 +86,11 @@ public class CadastroPage {
         return botaoProsseguirCep;
     }
 
-    public By getCampoCepWait() {
+    public String getCampoCepWait() {
         return campoCepWait;
     }
 
-    public By getTextSaoPaulo() {
+    public String getTextSaoPaulo() {
         return textSaoPaulo;
     }
 
