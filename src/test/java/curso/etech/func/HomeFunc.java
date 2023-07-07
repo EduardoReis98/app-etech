@@ -30,4 +30,9 @@ public class HomeFunc extends BaseTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(homePage.getXpathMenuSerie())));
         homePage.getMenuSeries().click();
     }
+
+    public void selecionarFilmes(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(homePage.getXpathMenuFilme())));
+        homePage.getMenuFilmes().click();
+    }
 }
