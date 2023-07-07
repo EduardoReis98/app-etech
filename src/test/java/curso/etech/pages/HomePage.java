@@ -2,7 +2,6 @@ package curso.etech.pages;
 
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
@@ -30,6 +29,11 @@ public class HomePage {
     @AndroidFindBy(id = "image2405f5d1220d45f")
     private WebElement capaFilme;
 
+    @AndroidFindBy(id = "menuSerie")
+    private WebElement menuSeries;
+
+    private String xpathMenuSerie = "//android.widget.FrameLayout[@resource-id='br.com.filme.app:id/menuSerie']";
+
     public WebElement getBotaoMenuSuperior() {
         return botaoMenuSuperior;
     }
@@ -52,5 +56,13 @@ public class HomePage {
 
     public String getXpathCampoPesquisa() {
         return xpathCampoPesquisa;
+    }
+
+    public WebElement getMenuSeries() {
+        return menuSeries;
+    }
+
+    public String getXpathMenuSerie() {
+        return xpathMenuSerie;
     }
 }
