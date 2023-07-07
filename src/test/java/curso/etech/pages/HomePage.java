@@ -32,7 +32,12 @@ public class HomePage {
     @AndroidFindBy(id = "menuSerie")
     private WebElement menuSeries;
 
+    @AndroidFindBy(id = "menuFilme")
+    private WebElement menuFilmes;
+
     private String xpathMenuSerie = "//android.widget.FrameLayout[@resource-id='br.com.filme.app:id/menuSerie']";
+
+    private String xpathMenuFilme = "//android.widget.FrameLayout[@resource-id='br.com.filme.app:id/menuFilme']";
 
     public WebElement getBotaoMenuSuperior() {
         return botaoMenuSuperior;
@@ -64,5 +69,13 @@ public class HomePage {
 
     public String getXpathMenuSerie() {
         return xpathMenuSerie;
+    }
+
+    public String getXpathMenuFilme() {
+        return xpathMenuFilme;
+    }
+
+    public WebElement getMenuFilmes() {
+        return menuFilmes;
     }
 }
