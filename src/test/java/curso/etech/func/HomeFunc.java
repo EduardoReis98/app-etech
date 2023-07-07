@@ -25,4 +25,9 @@ public class HomeFunc extends BaseTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(homePage.getXpathCampoPesquisa())));
         return homePage.getCapaFilme().isDisplayed();
     }
+
+    public void selecionarSeries(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(homePage.getXpathMenuSerie())));
+        homePage.getMenuSeries().click();
+    }
 }
