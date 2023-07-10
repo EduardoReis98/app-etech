@@ -39,6 +39,9 @@ public class HomePage {
 
     private String xpathMenuFilme = "//android.widget.FrameLayout[@resource-id='br.com.filme.app:id/menuFilme']";
 
+    @AndroidFindBy(id = "txtSair")
+    private WebElement sairConta;
+
     public WebElement getBotaoMenuSuperior() {
         return botaoMenuSuperior;
     }
@@ -77,5 +80,9 @@ public class HomePage {
 
     public WebElement getMenuFilmes() {
         return menuFilmes;
+    }
+
+    public WebElement getSairConta() {
+        return sairConta;
     }
 }
