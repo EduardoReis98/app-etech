@@ -4,7 +4,6 @@
 #date: 03/07/2023
 #version: 1.0
 
-  @smokeTest @testeCadastroFilme
   Funcionalidade: Cadastar Filme
     Com essa funcionalidade iremos validar
     O cadastro de um filme na aplicação
