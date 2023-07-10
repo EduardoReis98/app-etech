@@ -8,8 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(snippets = CucumberOptions.SnippetType.CAMELCASE,
                 features = {"src/test/resources/features/"},
                 glue = {"curso.etech.steps", "curso.etech.configuration"},
-                plugin = {"pretty"}, monochrome = true,
-                tags = "@testeSairConta")
+                plugin = {"pretty", "json:reports/cucumber.json"},
+                monochrome = true,
+                tags = "@smokeTest")
 
 public class RunTest {
 }
