@@ -35,4 +35,11 @@ public class HomeFunc extends BaseTest {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(homePage.getXpathMenuFilme())));
         homePage.getMenuFilmes().click();
     }
+
+    public void selecionarSairConta(){
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(homePage.getXpathBotaoSuperior())));
+        homePage.getBotaoMenuSuperior().click();
+        homePage.getSairConta().click();
+
+    }
 }

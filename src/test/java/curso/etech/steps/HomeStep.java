@@ -40,4 +40,9 @@ public class HomeStep {
     public void selecionarAbaFilmes(){
         homeFunc.selecionarFilmes();
     }
+
+    @Quando("selecionar o botão sair da conta na aba de usuários")
+    public void selecionarQuitAbaUsuario(){
+        homeFunc.selecionarSairConta();
+    }
 }
