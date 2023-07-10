@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Execução de testes web - E.Tech Mentoria</title>
+    <link rel="icon" href="http://reportbuilder.rajatthareja.com/rb.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+    <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.3/css/report.builder.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<header class="green lighten-5">
+    <div class="row green lighten-1">
+        <div class="col m6 hide-on-small-only">
+            <h5 class="truncate white-text tooltipped" data-tooltip="Execução de testes web - E.Tech Mentoria">Execução de testes web - E.Tech Mentoria</h5>
+        </div>
+        <div class="col m6 s12 green lighten-1">
+            <ul class="tabs green lighten-1 row" style="overflow-x: hidden">
+                <li class="tab col s3"><a class=" green lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a></li>
+                <li class="tab col s3"><a class=" green lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a></li>
+                <li class="tab col s3"><a class=" green lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="green lighten-5">
+    <div class="row">
+
+<div id="overview" class="col s12 green lighten-5">
+    <div class="row">
+        <div class="col m4 s12">
+            <canvas id="featuresDoughnut" width="400" height="400"></canvas>
+            <table id="metaDataFeatures" class="bordered">
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col m4 s12">
+            <canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+            <table id="metaDataScenarios" class="bordered">
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="col m4 s12">
+            <table id="metaData" class="bordered">
+                <tbody>
+                <tr><th>Duration</th><td>1M40S</td></tr>
+                <tr><th>Ambiente</th><td>Produção</td></tr>
+                <tr><th>Data e hora</th><td>10/07/2023 14:16:34</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div id="features" class="col s12 green lighten-5">
+    <ul class="featureList collapsible popout" data-collapsible="expandable">
+        <li class="feature working">
+            <div class="collapsible-header green lighten-1 white-text waves-effect waves-light">
+                <i class="material-icons white-text">featured_play_list</i>
+                <b>Funcionalidade</b>&nbsp;Cadastro (33S)
+            </div>
+            <div class="collapsible-body green lighten-4">
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@testCadastro</div>
+                <ul class="collection scenarioList">
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f0s0">
+                                <b>Contexto</b>  (2S)
+                            </a>
+                        </li>
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f0s1">
+                                <b>Cenário</b> Validar cadastro na aplicação (31S)
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </li>
+        <li class="feature working">
+            <div class="collapsible-header green lighten-1 white-text waves-effect waves-light">
+                <i class="material-icons white-text">featured_play_list</i>
+                <b>Funcionalidade</b>&nbsp;Login (17S)
+            </div>
+            <div class="collapsible-body green lighten-4">
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@testeLogin</div>
+                <ul class="collection scenarioList">
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f1s0">
+                                <b>Contexto</b>  (0S)
+                            </a>
+                        </li>
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f1s1">
+                                <b>Cenário</b> Validar login na aplicção (17S)
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </li>
+        <li class="feature working">
+            <div class="collapsible-header green lighten-1 white-text waves-effect waves-light">
+                <i class="material-icons white-text">featured_play_list</i>
+                <b>Funcionalidade</b>&nbsp;Logout da aplicação (19S)
+            </div>
+            <div class="collapsible-body green lighten-4">
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@testeSairConta</div>
+                <ul class="collection scenarioList">
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f2s0">
+                                <b>Contexto</b> estar logado na aplicação (6S)
+                            </a>
+                        </li>
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f2s1">
+                                <b>Cenário</b> Logout da aplicação (12S)
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </li>
+        <li class="feature working">
+            <div class="collapsible-header green lighten-1 white-text waves-effect waves-light">
+                <i class="material-icons white-text">featured_play_list</i>
+                <b>Funcionalidade</b>&nbsp;Pesquisar filme na tela Home (29S)
+            </div>
+            <div class="collapsible-body green lighten-4">
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                        <div class="chip"><i class="material-icons rotate-45">label</i>@pesquisaFilmes2</div>
+                <ul class="collection scenarioList">
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f3s0">
+                                <b>Contexto</b> estar logado na aplicação (7S)
+                            </a>
+                        </li>
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f3s1">
+                                <b>Cenário</b> pesquisa de filme na tela home (10S)
+                            </a>
+                        </li>
+                        <li class="collection-item scenario passed">
+                            <a class="waves-effect waves-light modal-trigger white-text" href="#f3s2">
+                                <b>Cenário</b> pesquisa de séries na tela série (10S)
+                            </a>
+                        </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</div>
+<div id="summary" class="col s12 green lighten-5">
+    <table id="summaryTable" class="bordered green lighten-1 white-text">
+        <thead>
+        <tr>
+            <th>Feature</th>
+            <th>Scenario</th>
+            <th>Status</th>
+            <th class="hide-on-small-only">Error</th>
+        </tr>
+        </thead>
+        <tbody>
+                    <tr class="passed">
+                        <td class="hoverable">Cadastro</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f0s0"></a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Cadastro</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f0s1">Validar cadastro na aplicação</a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Login</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f1s0"></a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Login</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f1s1">Validar login na aplicção</a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Logout da aplicação</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f2s0">estar logado na aplicação</a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Logout da aplicação</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f2s1">Logout da aplicação</a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Pesquisar filme na tela Home</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f3s0">estar logado na aplicação</a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Pesquisar filme na tela Home</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f3s1">pesquisa de filme na tela home</a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+                    <tr class="passed">
+                        <td class="hoverable">Pesquisar filme na tela Home</td>
+                        <td class="hoverable"><a class="modal-trigger white-text" href="#f3s2">pesquisa de séries na tela série</a></td>
+                        <td class="hoverable uppercase">passed</td>
+                        <td class="hoverable hide-on-small-only"></td>
+                    </tr>
+        </tbody>
+    </table>
+</div>
+<div id="errors" class="col s12 green lighten-5">
+    <ul class="errorList collapsible popout" data-collapsible="expandable">
+    </ul>
+</div>
+    </div>
+</main>
+
+<footer class="page-footer green lighten-4">
+    <div class="footer-copyright green lighten-1">
+        <div class="container">
+            Happy Reporting!
+            <a class="white-text text-lighten-4 right" href="http://reportbuilderjava.rajatthareja.com">Generated by Report Builder</a>
+        </div>
+    </div>
+</footer>
+<div id="f0s0" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+        <h5></h5>
+        file:src/test/resources/features/cadastro.feature:12
+
+        <p><ul class="collection stepList">
+
+
+<li class="collection-item step passed">
+    <b>Dado </b> acessar a tela de cadastro (2S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f0s1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+                <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                <div class="chip"><i class="material-icons rotate-45">label</i>@testCadastro</div>
+
+        <h5>Validar cadastro na aplicação</h5>
+        file:src/test/resources/features/cadastro.feature:15
+
+        <p><ul class="collection stepList">
+<li class="collection-item hook"></li>
+
+<li class="collection-item step passed">
+    <b>Quando </b> preencher dados de um novo usuário (20S)
+</li>
+
+<li class="collection-item step passed">
+    <b>Então </b> deve visualizar a tela de login (1S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f1s0" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+        <h5></h5>
+        file:src/test/resources/features/login.feature:12
+
+        <p><ul class="collection stepList">
+
+
+<li class="collection-item step passed">
+    <b>Dado </b> acessar a tela de login (0S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f1s1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+                <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                <div class="chip"><i class="material-icons rotate-45">label</i>@testeLogin</div>
+                <div class="chip"><i class="material-icons rotate-45">label</i>@testeLoginCorreto</div>
+
+        <h5>Validar login na aplicção</h5>
+        file:src/test/resources/features/login.feature:16
+
+        <p><ul class="collection stepList">
+<li class="collection-item hook"></li>
+
+<li class="collection-item step passed">
+    <b>Quando </b> inserir os dados de usuário (4S)
+        <table>
+            <tbody>
+                <tr><td>[email, senha]</td></tr>
+                <tr><td>[automacao@etech.dev, Etech@123]</td></tr>
+            </tbody>
+        </table>
+</li>
+
+<li class="collection-item step passed">
+    <b>Então </b> deve visualizar o email ultilizado "automacao@etech.dev" (3S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f2s0" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+        <h5>estar logado na aplicação</h5>
+        file:src/test/resources/features/logout.feature:12
+
+        <p><ul class="collection stepList">
+
+
+<li class="collection-item step passed">
+    <b>Dado </b> acessar a tela de login (0S)
+</li>
+
+<li class="collection-item step passed">
+    <b>E </b> inserir os dados de usuário (6S)
+        <table>
+            <tbody>
+                <tr><td>[email, senha]</td></tr>
+                <tr><td>[automacao@etech.dev, Etech@123]</td></tr>
+            </tbody>
+        </table>
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f2s1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+                <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                <div class="chip"><i class="material-icons rotate-45">label</i>@testeSairConta</div>
+
+        <h5>Logout da aplicação</h5>
+        file:src/test/resources/features/logout.feature:18
+
+        <p><ul class="collection stepList">
+<li class="collection-item hook"></li>
+
+<li class="collection-item step passed">
+    <b>Quando </b> selecionar o botão sair da conta na aba de usuários (2S)
+</li>
+
+<li class="collection-item step passed">
+    <b>Então </b> deve visualizar a tela de login (1S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f3s0" class="modal modal-fixed-footer">
+    <div class="modal-content">
+
+        <h5>estar logado na aplicação</h5>
+        file:src/test/resources/features/pesquisaFilmes.feature:12
+
+        <p><ul class="collection stepList">
+
+
+<li class="collection-item step passed">
+    <b>Dado </b> acessar a tela de login (0S)
+</li>
+
+<li class="collection-item step passed">
+    <b>E </b> inserir os dados de usuário (6S)
+        <table>
+            <tbody>
+                <tr><td>[email, senha]</td></tr>
+                <tr><td>[automacao@etech.dev, Etech@123]</td></tr>
+            </tbody>
+        </table>
+</li>
+
+<li class="collection-item step passed">
+    <b>E </b> selecionar a aba de séries (1S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f3s1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+                <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                <div class="chip"><i class="material-icons rotate-45">label</i>@pesquisaHome</div>
+
+        <h5>pesquisa de filme na tela home</h5>
+        file:src/test/resources/features/pesquisaFilmes.feature:18
+
+        <p><ul class="collection stepList">
+<li class="collection-item hook"></li>
+
+<li class="collection-item step passed">
+    <b>Quando </b> pesquisar o filme "Vingadores" (1S)
+</li>
+
+<li class="collection-item step passed">
+    <b>Então </b> deve visualizar a capa do filme (1S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div><div id="f3s2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+                <div class="chip"><i class="material-icons rotate-45">label</i>@smokeTest</div>
+                <div class="chip"><i class="material-icons rotate-45">label</i>@pesquisaSerie</div>
+
+        <h5>pesquisa de séries na tela série</h5>
+        file:src/test/resources/features/pesquisaFilmes.feature:19
+
+        <p><ul class="collection stepList">
+<li class="collection-item hook"></li>
+
+<li class="collection-item step passed">
+    <b>Quando </b> pesquisar a série "Breaking Bad" (1S)
+</li>
+
+<li class="collection-item step passed">
+    <b>Então </b> deve visualizar a capa da série (0S)
+</li>
+
+        </ul></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></a>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+            $('#f0s0').modal();
+            $('#f0s1').modal();
+            $('#f1s0').modal();
+            $('#f1s1').modal();
+            $('#f2s0').modal();
+            $('#f2s1').modal();
+            $('#f3s0').modal();
+            $('#f3s1').modal();
+            $('#f3s2').modal();
+        $('li:empty').remove();
+    });
+</script>
+<script src="https://cdn.rawgit.com/rajatthareja/ReportBuilderJava/v1.0.3/js/report.builder.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+    var commands = {
+        'show :tab': function(tab) {
+            if (tab === "overview") {
+                $("a[data-tooltip='Results Overview']").click();
+            } else if (tab === "features" || tab === "feature") {
+                $("a[data-tooltip='Scenarios by Features']").click();
+            } else if (tab === "summary") {
+                $("a[data-tooltip='Scenarios Summary Table']").click();
+            } else if (tab === "errors" || tab === "error" || tab === "failed" || tab === "bugs") {
+                $("a[data-tooltip='Failed Scenarios']").click();
+            }
+        },
+        'search *search': function (search) {
+            $("a[data-tooltip='Scenarios Summary Table']").click();
+            $("input[type='search']").val(search);
+            $('table#summaryTable').DataTable().search(search).draw();
+        }
+    };
+    annyang.addCommands(commands);
+    annyang.start();
+</script>
+</body>
+</html>
