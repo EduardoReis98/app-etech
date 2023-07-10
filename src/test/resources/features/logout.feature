@@ -1,13 +1,13 @@
 #language: pt
 #enconding: UTF-8
 #author: Eduardo Reis
-#date: 03/07/2023
+#date: 10/07/2023
 #version: 1.0
 
-  @smokeTest @pesquisaHome
-  Funcionalidade: Pesquisar filme na tela Home
+  @smokeTest @testeSairConta
+  Funcionalidade: Logout da aplicação
     Com essa funcionalidade iremos validar
-    A pesquisa de um filme e visualizar a capa do mesmo
+    O logout de um usuário da aplicação
 
     Contexto: estar logado na aplicação
       Dado acessar a tela de login
@@ -15,6 +15,6 @@
         | email               | senha     |
         | automacao@etech.dev | Etech@123 |
 
-    Cenário: pesquisa de filme na tela home
-      Quando pesquisar o filme "Vingadores"
-      Então deve visualizar a capa do filme
+    Cenário: Logout da aplicação
+      Quando selecionar o botão sair da conta na aba de usuários
+      Então deve visualizar a tela de login
